@@ -43,6 +43,18 @@ public:
 		currentHP += healamount;
 	}
 
+	hp() {
+		currentHP = 1;
+		maxHP = 1;
+	}
+	hp(hptype cHP, hptype mHP) {
+		currentHP = cHP;
+		maxHP = mHP;
+		if (currentHP > maxHP) {
+			currentHP = maxHP;
+		}
+	}
+
 private:
 	hptype currentHP;
 	hptype maxHP;
