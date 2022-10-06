@@ -1,6 +1,6 @@
 #pragma once
-#include "hitpointtypes.h"
-
+#include <cstdint>
+typedef std::uint16_t hptype;
 class hp {
 public:
 	// if set successfully, returns true
@@ -58,5 +58,5 @@ public:
 private:
 	hptype currentHP;
 	hptype maxHP;
-	hptype shieldHP;
+	//hptype shieldHP;
 };

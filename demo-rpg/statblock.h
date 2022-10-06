@@ -1,6 +1,6 @@
 #pragma once
-#include "stattypes.h"
-
+#include <cstdint>
+typedef uint16_t stattype;
 class StatBlock {
 
 public:
@@ -20,7 +20,11 @@ public:
 	stattype getIntellect() {
 		return Intellect;
 	}
-
+protected:
+	void increaseStats(stattype s, stattype i) {
+		Strength += s;
+		Intellect += i;
+	}
 
 private:
 	stattype Strength;
