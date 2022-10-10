@@ -1,16 +1,17 @@
 #include <iostream>
-#include "allclasses.h"
+#include "playercharacter.h"
 using namespace std;
 int main() {
-	Wizard cle;
+	PlayerCharacter p1(new Rogue());
 	for (int i = 0; i < 2; i++) {
 		
-		cout << "\nCleric\n" << "max HP:" << cle.getMaxHP()
-			<< "\nStrength: " << cle.getStrength()
-			<< "\nIntellect: " << cle.getIntellect()
-			<< "\n Level: " << cle.getLevel()
-			<< "\n EXP: " << cle.getCurrentEXP();
-		cle.gainEXP(100u);
+		cout << '\n' << p1.getClassName()
+			<< "\n" << "HP:" << p1.getCurrentHP() << '/' << p1.getMaxHP()
+			<< "\nStrength: " << p1.getStrength()
+			<< "\nIntellect: " << p1.getIntellect()
+			<< "\n Level: " << p1.getLevel()
+			<< "\n EXP: " << p1.getCurrentEXP();
+		p1.gainEXP(100u);
 		
 	}
 	

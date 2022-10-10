@@ -1,2 +1,3 @@
 ﻿  main.cpp
+C:\redoneProjects\demo-rpg\demo-rpg\playercharacter.h(176,32): warning C4244: 'return': conversion from 'exptype' to 'leveltype', possible loss of data
   demo-rpg.vcxproj -> C:\redoneProjects\demo-rpg\x64\Debug\demo-rpg.exe
