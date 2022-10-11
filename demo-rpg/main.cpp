@@ -2,7 +2,7 @@
 #include "playercharacter.h"
 using namespace std;
 int main() {
-	PlayerCharacter p1(new Rogue());
+	PlayerCharacter p1(new Cleric());
 	for (int i = 0; i < 2; i++) {
 		
 		cout << '\n' << p1.getClassName()
@@ -11,7 +11,9 @@ int main() {
 			<< "\nIntellect: " << p1.getIntellect()
 			<< "\n Level: " << p1.getLevel()
 			<< "\n EXP: " << p1.getCurrentEXP();
-		p1.gainEXP(100u);
+		
+		if(i<1)
+			p1.gainEXP(100u);
 		
 	}
 	
